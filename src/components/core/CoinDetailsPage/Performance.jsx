@@ -73,14 +73,14 @@ export default function Performance() {
 
           {/* High */}
           <div className="flex flex-col text-sm text-right text-slate-700">
-            <span className="text-xs text-slate-500">Today's Low</span>
+            <span className="text-xs text-slate-500">Today&apos;s Low</span>
             <span>46,930.22</span>
           </div>
         </div>
         <div className="flex justify-between items-center gap-5 my-3">
           {/* Low */}
           <div className="flex flex-col text-sm text-slate-700">
-            <span className="text-xs text-slate-500">Today's Low</span>
+            <span className="text-xs text-slate-500">Today&apos;s Low</span>
             <span>46,930.22</span>
           </div>
 
@@ -89,7 +89,7 @@ export default function Performance() {
 
           {/* High */}
           <div className="flex flex-col text-sm text-right text-slate-700">
-            <span className="text-xs text-slate-500">Today's Low</span>
+            <span className="text-xs text-slate-500">Today&apos;s Low</span>
             <span>46,930.22</span>
           </div>
         </div>
