@@ -8,6 +8,7 @@ import Sentiment from "./Sentiment";
 import AboutCoin from "./AboutCoin";
 import Tokenomics from "./Tokenomics";
 import Team from "./Team";
+import Link from "next/link";
 
 const tabs = [
   "Overview",
@@ -27,7 +28,7 @@ export default function CoinInfo({ currentCoin }) {
   const [coinPricing, setCoinPricing] = useState({});
   const [selectedTimeLine, setSelectedTimeLine] = useState(timeLine[0]);
 
-  const [errorState, setErrorState] = useState(false)
+  const [errorState, setErrorState] = useState(false);
 
   const getCoinDetails = async (coin) => {
     try {
@@ -43,11 +44,9 @@ export default function CoinInfo({ currentCoin }) {
       setCoinPricing(data2[coin]);
     } catch (error) {
       console.log("Error in getCoinDetails: ", error);
-      setErrorState(true)
+      setErrorState(true);
     }
   };
-
-  
 
   useEffect(() => {
     getCoinDetails(currentCoin);
@@ -55,9 +54,12 @@ export default function CoinInfo({ currentCoin }) {
 
   return (
     <>
-      {(errorState || coinDetails?.error) ? (
-        <div className="container border-2 border-dashed border-slate-500 rounded-md flex items-center justify-center mx-auto px-4 text-5xl text-center font-light py-10 text-slate-500">
+      {errorState || coinDetails?.error ? (
+        <div className="container border-2 border-dashed border-slate-500 rounded-md flex items-center justify-center mx-auto px-4 text-3xl md:text-5xl text-center font-light py-10 text-slate-500 flex-col gap-4">
           Sorry, Coin not found
+          <Link href={"/"}>
+            <Image src={"/koinx.svg"} width={200} height={50} className="grayscale hover:grayscale-0 transition-all duration-200" />
+          </Link>
         </div>
       ) : (
         <div className="lg:w-[70%] w-[100%]  flex flex-col gap-5">
