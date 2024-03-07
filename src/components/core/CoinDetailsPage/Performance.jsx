@@ -59,7 +59,7 @@ export default function Performance() {
         <div className="flex justify-between items-center gap-5 my-3 relative">
           {/* Low */}
           <div className="flex flex-col text-sm text-slate-700">
-            <span className="text-xs text-slate-500">Today's Low</span>
+            <span className="text-xs text-slate-500">Today&apos;s Low</span>
             <span>46,930.22</span>
           </div>
 
@@ -97,9 +97,9 @@ export default function Performance() {
 
       <HeadingWithInfo title={"Fundamentals"} />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-20 my-3">
-        {FundamentalData.map((data) => {
+        {FundamentalData.map((data, index) => {
           return (
-            <div className="flex justify-between items-center h-[55px] border-b text-sm">
+            <div key={index} className="flex justify-between items-center h-[55px] border-b text-sm">
               <p className="text-slate-400">{data.title}</p>
               <p className="text-right flex flex-col ">
                 <span className="flex flex-row text-right justify-end gap-x-2">

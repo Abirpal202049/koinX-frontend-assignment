@@ -38,7 +38,7 @@ export default function Team() {
       <div className="flex flex-col gap-4 my-4">
         {teamDetails?.map((member, index) => {
           return (
-            <div className="flex flex-col md:flex-row gap-4 bg-blue-200 rounded-md p-4 items-center">
+            <div key={index} className="flex flex-col md:flex-row gap-4 bg-blue-200 rounded-md p-4 items-center">
               <div className="flex flex-col items-center">
                 <Image
                   src={member.image}
