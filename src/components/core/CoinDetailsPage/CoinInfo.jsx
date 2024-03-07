@@ -55,7 +55,7 @@ export default function CoinInfo({ currentCoin }) {
 
   return (
     <>
-      {errorState ? (
+      {(errorState || coinDetails?.error) ? (
         <div className="container border-2 border-dashed border-slate-500 rounded-md flex items-center justify-center mx-auto px-4 text-5xl text-center font-light py-10 text-slate-500">
           Sorry, Coin not found
         </div>
