@@ -5,9 +5,9 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 const navOptions = [
-  { id: 1, name: "Crypto Taxes", link: "/crypto-tax" },
-  { id: 2, name: "Free Tools", link: "/free-tools" },
-  { id: 3, name: "Resource Center", link: "/resource-center" },
+  { id: 1, name: "Crypto Taxes", link: "/" },
+  { id: 2, name: "Free Tools", link: "/" },
+  { id: 3, name: "Resource Center", link: "/" },
 ];
 
 export default function Navbar() {
