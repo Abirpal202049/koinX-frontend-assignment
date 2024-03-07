@@ -16,7 +16,9 @@ export default function Navbar() {
     <div className="bg-white border-b border-slate-300">
       <div className="container mx-auto py-4 flex items-center px-5 md:px-2">
         <div className="flex-1">
-          <Image src={"/koinx.svg"} width={100} height={50} />
+          <Link href={"/"}>
+            <Image src={"/koinx.svg"} width={100} height={50} />
+          </Link>
         </div>
 
         {/* Nav  Options */}
