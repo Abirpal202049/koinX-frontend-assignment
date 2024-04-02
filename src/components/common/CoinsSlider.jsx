@@ -64,7 +64,7 @@ export default function CoinsSlider({coinDataArr}) {
               </div>
 
               <div className="text-lg font-medium prose">
-                {coin?.item?.data?.price?.split(" ")}
+                {coin?.item?.data?.price}
               </div>
 
               <div className="">
