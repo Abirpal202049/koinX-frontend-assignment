@@ -1,5 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+[![Quality gate](http://34.230.30.47:9000/api/project_badges/quality_gate?project=KoinX-Website&token=sqb_0b3d89380e2154524dbac6f210b5f3e9485f9702)](http://34.230.30.47:9000/dashboard?id=KoinX-Website)
+
 ## Getting Started
 
 First, run the development server:
